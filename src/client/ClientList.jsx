@@ -1,9 +1,12 @@
+import { useContext } from 'react';
+import { ClientContext } from './ClientContext';
+
 const ClientList = () => {
+  const { clients } = useContext(ClientContext);
   return(
     <ul className="client-list">
       {
-        Object.keys(localStorage).map(key => {
-          const client = JSON.parse(localStorage[key]);
+        clients.map(client => {
           return (
             <li key={client.email}>
               <strong>{client.name}</strong><br />

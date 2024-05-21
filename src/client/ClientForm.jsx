@@ -1,12 +1,31 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { ClientContext } from './ClientContext';
 
 const ClientForm = () => {
+  const { /*clients,*/ setClients } = useContext(ClientContext);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
   const submitEmployee = () => {
-    localStorage.setItem(email, JSON.stringify({name, email, phone, address}));
+    setClients(prev => [
+      ...prev,
+      {
+        name,
+        email,
+        phone,
+        address
+      }
+    ]);
+    // setClients([
+    //   ...clients,
+    //   {
+    //     name,
+    //     email,
+    //     phone,
+    //     address
+    //   }
+    // ]);
   };
   return (
     <div className="form">
