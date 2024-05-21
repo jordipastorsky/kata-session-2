@@ -4,9 +4,9 @@ const Alert = () => {
   const displayAlert = useAlert();
 
   if (displayAlert !== 'DISPLAY') return null;
-  
+
   return (
-    <div class="alert">
+    <div className="alert">
       <p> New client has been added </p>
     </div>
   );
