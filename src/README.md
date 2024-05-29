@@ -10,7 +10,7 @@ Run app: **npm run dev**
 
 The client management app is not working. The client list is not being updated when a new client is added. However, when the website is reloaded, all clients are displayed correctly. Do you know why?
 
-The principal engineer tells you to fix the issue by creating a context for the entire app and saving the list of clients into this context.
+The principal engineer tells you to fix the issue by creating a context for the entire app and saving the list of clients into this context. It's not a problem that clients are lost when wesite is reloaded because in a future an API will be used to get them.
 
 
 **Exercise 2.**
@@ -25,7 +25,7 @@ setEmail(''); <br />
 setPhone(''); <br />
 setAddress(''); <br />**
 
-**Extra:** could you create a clear button?
+Could you also create a clear button?
 
 **Exercise 3.**
 
@@ -33,5 +33,5 @@ After some time on production, a new requirement has been requested. When agent 
 
 To do this improvement, principal engineer suggested you to create a new component with a use effect that displays an alert on the top of the list when a new client is added. The alert should be displayed for 2 seconds.
 
-**Extra:** principal engineer saids that this hook maybe needed for other components. Could you create a custom hook?
+**Extra:** principal engineer saids that this hook maybe needed for other components. Once this effect is working, could you refactor it to be a custom hook?
 
