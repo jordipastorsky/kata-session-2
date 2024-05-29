@@ -6,6 +6,8 @@ Install dependencies: **npm install**
 
 Run app: **npm run dev**
 
+**Tip:** Take a look at App.css file, the styles needed for these exercises are already done
+
 **Exercise 1.**
 
 The client management app is not working. The client list is not being updated when a new client is added. However, when the website is reloaded, all clients are displayed correctly. Do you know why?
